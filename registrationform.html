@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>   
+     <style>
+        div{
+        max-width: 1000px;
+        margin: auto;
+   
+}
+.regform {
+         
+    padding: 20px;
+        background-color: aquamarine;
+        margin: auto;
+    
+    }
+    form input, frorm select ,form textarea,form button{
+        font-weight: bold;
+    
+    }
+    form button{
+        margin: auto;
+        width: 70px;
+        height: 50px;
+        font-weight: bold;
+    }
+    form input:focus{
+    outline: none;
+    }
+    </style>
+</head>
+<body>
+    <div class="regform">
+        <h2>
+            Registration Form
+        </h2>
+        <form action="#" method="post">
+            <label for="fname" style="font-weight: bold;">First Name</label>
+            <input type="text" id="fname"required> <br><br>
+            <label for="mname" style="font-weight: bold;">Middle Name</label>
+            <input type="text"id="mname"> <br><br>
+            <label for="lname" style="font-weight: bold;">Last Name</label>
+            <input type="text"id="lname"required> <br><br>
+
+            <label for="number" style="font-weight: bold;">Mobile Number</label>
+            <select name="num" id="nm">
+                <option value="1">+880</option>
+                <option value="2">+593</option>
+                <option value="1">+20</option>
+                <option value="2">+1</option>
+                <option value="1">+375</option>
+                <option value="2">+2</option>
+                <option value="1">+32</option>
+                <option value="2">+292</option>
+            </select>   
+            <input type="text" name="phone" size="11"required> <br> <br>  
+
+            <label for="email" style="font-weight: bold;">Email</label>
+           <input type="email" id="email" required><br><br>
+
+           <label for="address" style="font-weight: bold;">Address</label>
+            <input type="Address"id="address" required><br><br>
+
+            <label for="pass" style="font-weight: bold;">Password</label>
+            <input type="password" id="pass" required><br><br>
+            <label for="pass1" style="font-weight: bold;">Confirm Password</label>
+            <input type="password" id="pass1" required><br><br>
+
+           <label for="gender" style="font-weight: bold;">Gender</label><br>
+            <input type="radio" name="male"/> Male <br>  
+            <input type="radio" name="female"/> Female <br>  
+            <input type="radio" name="other"/> Other  <br><br>
+
+           <label for="dob" style="font-weight: bold;">Date of Birth</label>
+           <input type="date"required id="dob"><br><br>
+
+            <label for="crs" style="font-weight: bold;">Course</label>
+            <select name="cars" id="crs" style=" font-weight: bold;">
+                <option value="web">Web design</option>
+                <option value="dev">Web development</option>
+                <option value="soft">Software engineering</option>
+            </select><br><br>
+            <label style="font-weight: bold;">More details</label><br>
+            <textarea name="Text" id="#" cols="30" rows="10">Text</textarea><br><br>
+        <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
